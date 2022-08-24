@@ -105,8 +105,9 @@
                        
               <div class="col-12 d-flex justify-content-center mb-5">
                 <div class="card w-50 mx-auto my-3" style="width: 18rem;">
-                  <div class="card-body">
+                  <div class="card-body d-flex justify-content-between">
                     <h5 class="card-title">Card title</h5>
+                    <h6 class="day">12/22</h4>
                   </div>
                   <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
                   <div class="card-body">       
@@ -285,7 +286,12 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <div class="form-floating border border-1 rounded-1 my-2">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Comments</label>
+        </div>
+        <button type="button" class="btn btn-light border border-1"><i class="fa-solid fa-camera"></i></button>
+        <button type="button" class="btn btn-light border border-1"><i class="fa-solid fa-location-dot"></i></button>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
