@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="container-fluid header fixed-top">
+    <nav class="row navbar bg-light">
+        <div class="container col-10">
+          <a class="navbar-brand"><i class="fa-brands fa-instagram"></i> instagram</a>
+          <form class="d-flex" role="search"> 
+            <button type="button" class="btn btn-success my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button>          
+            <div class="btn-group">
+              <button type="button" class="btn btn-light dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false">             
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li><button class="dropdown-item" type="button">Another action</button></li>
+                <li><button class="dropdown-item" type="button">Something else here</button></li>
+              </ul>
+            </div>                       
+          </form>
+        </div>
+      </nav>
+   </div>
+
+
+<!-- tabbar -->
+ <div class="row tabSelector">
+  <div class="col-12 p-2">
+    <ul class="nav nav-pills d-flex justify-content-center py-2">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="postGallery-tab" data-bs-toggle="tab" data-bs-target="#postGallery-tab-pane" type="button" role="tab" aria-controls="postGallery-tab-pane" aria-selected="true"><i class="fa-solid fa-grip"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="postList-tab" data-bs-toggle="tab" data-bs-target="#postList-tab-pane" type="button" role="tab" aria-controls="postList-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
+
+  </div>
+ </div>
+       
+      <div class="tab-content" id="myTabContent">
+        <!-- first Gallery -->
+        <div class="tab-pane fade show active" id="postGallery-tab-pane" role="tabpanel" aria-labelledby="postGallery-tab" tabindex="0">
+          <div class="container-fluid col-10 gallery">
+            <div class="row gx-1">
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+            </div>
+            <div class="row mt-1 gx-1">
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+            </div>
+            <div class="row mt-1 gx-1">
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+            </div>
+            <div class="row mt-1 gx-1">
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+              <div class="col-4"><img class="img-fluid" src="https://placekitten.com/500/360" alt=""></div>
+            </div>
+           </div>
+        </div>
+        <!-- second List -->
+        <div class="tab-pane fade" id="postList-tab-pane" role="tabpanel" aria-labelledby="postList-tab" tabindex="0">
+          <div class="container-fluid list">
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+            <div class="row">
+                       
+              <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="card w-50 mx-auto my-3" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                  <img src="https://placekitten.com/600/400" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">       
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                  </div>
+                  <div class="input-group p-2">
+                    <button class="btn btn-light rounded-0" type="button" id="button-addon1"><i class="fa-regular fa-heart"></i></button>
+                    <input type="text" class="form-control" placeholder="Coment..." aria-label="Example text with button addon" aria-describedby="button-addon1"><i class="fa-solid fa-ellipsis-vertical m-2 me-3"></i>
+                  </div>
+                </div>
+               
+                <!-- .post.container>(.postHeader.p-2.d-flex.justify-content-space-betwen>.postLeft{My First photo}+.postRight{4/12})+(.container>img.img-fluid[src="https://placekitten.com/400/300"])+.container.postInfo>h4{23 Likes} -->
+              </div>
+            </div>
+                       
+            </div>
+           </div>
+        </div>
+      </div>
+    <!-- end tabbar -->
+
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!--header desarmado-->
+
+
+

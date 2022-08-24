@@ -1,0 +1,36 @@
+body{
+    background-color: #e4e3e3!important;
+}
+.header > .navbar{
+    --bs-navbar-padding-y: 0rem;
+}
+.nav-pills{
+    --bs-nav-pills-link-active-bg: #6d6d6d;
+}
+.nav .nav-item .nav-link{
+    color: #6d6d6d;
+}
+.nav .nav-item .active{
+    color: white;
+}
+.post{
+    background-color: white;
+    border-radius: 2%;
+}
+.form-control{
+    border: 0;
+}
+.input-group > .btn-light{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.input-group > .btn-light:hover{
+    border-radius: 50%!important;
+    background-color: rgb(236, 178, 178);
+    border: 0;
+}
+.tabSelector{
+    margin-top: 80px;
+}
